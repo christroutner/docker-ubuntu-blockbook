@@ -1,0 +1,14 @@
+{
+    "coin_name": "Bcash",
+    "coin_shortcut": "BCH",
+    "coin_label": "Bcash",
+    "rpc_url": "http://104.248.233.8:8332",
+    "rpc_user": "user",
+    "rpc_pass": "iohGu25NwuBj",
+    "rpc_timeout": 25,
+    "parse": true,
+    "message_queue_binding": "tcp://104.248.233.8:8332",
+    "subversion": "",
+    "address_format": "",
+    "block_addresses_to_keep": 300
+}
