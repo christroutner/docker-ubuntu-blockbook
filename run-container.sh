@@ -9,4 +9,4 @@
 #--entrypoint=/home/blockbook/go/src/blockbook/blockbook dev-bb \
 #-sync -blockchaincfg=/home/blockbook/cfg.json -workers=1 -logtostderr
 
-docker container run --rm -d dev-bb
+docker container run --rm -d --name dev-bb dev-bb
