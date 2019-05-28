@@ -71,6 +71,7 @@ copy launch.sh launch.sh
 EXPOSE 9030 9130
 
 VOLUME /opt/coins/data/bcash/blockbook/db
+VOLUME /opt/coins/blockbook/bcash/logs
 
 #ENTRYPOINT $HOME/launch.sh
 
