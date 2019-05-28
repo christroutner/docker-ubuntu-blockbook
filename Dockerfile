@@ -2,6 +2,8 @@
 FROM ubuntu:18.04
 MAINTAINER Chris Troutner <chris.troutner@gmail.com>
 
+WORKDIR /root
+
 RUN apt-get update -y
 
 RUN apt-get install -y curl sudo
@@ -30,6 +32,6 @@ EXPOSE 9030 9130
 VOLUME /opt/coins/data/bcash/blockbook/db
 VOLUME /opt/coins/blockbook/bcash/logs
 
-ENTRYPOINT $HOME/launch.sh
+ENTRYPOINT /root/launch.sh
 
 #CMD node dummyapp.js
