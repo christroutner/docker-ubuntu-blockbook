@@ -68,7 +68,9 @@ copy launch.sh launch.sh
 
 #COPY blockchain_cfg.json $HOME/cfg.json
 
-#EXPOSE 9030 9130
+EXPOSE 9030 9130
+
+VOLUME /opt/coins/data/bcash/blockbook/db
 
 #ENTRYPOINT $HOME/launch.sh
 
