@@ -1,4 +1,3 @@
-#FROM fedora:29
 FROM ubuntu:18.04
 MAINTAINER Chris Troutner <chris.troutner@gmail.com>
 
@@ -34,4 +33,7 @@ VOLUME /opt/coins/blockbook/bcash/logs
 
 ENTRYPOINT /root/launch.sh
 
+# Run this dummy app to keep the container running so that you can enter the
+# container with `docker exec -it dev-bb bash` and debug the container from
+# the inside.
 #CMD node dummyapp.js
