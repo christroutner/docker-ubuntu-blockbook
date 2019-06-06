@@ -20,12 +20,15 @@ an RPC interace exposed and `txindex=1` set in its `bitcoin.conf` file. Once
 you've met that prerequisite, edit the [blockchain_cfg.json](blockchain_cfg.json)
 file with the RPC connection details.
 
-- Ensure you have Docker installed and then clone this repository and enter the
-directory it creates.
+- Ensure you have Docker and Docker Compose installed.
+[Here](http://troutsblog.com/research/dev-ops/overview) to install that software
+on Ubuntu.
 
-- Build the image by running the `build-image.sh` shell script.
+- Clone this repository and enter the directory it creates.
 
-- Run Blockbook by running the `run-container.sh` shell script.
+- Build the image by running `docker-compose build`.
+
+- Run Blockbook with `docker-compose up -d`
 
 ## Usage
 This container configures Blockbook to run as a single-threaded process. This is
