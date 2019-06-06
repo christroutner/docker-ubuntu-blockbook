@@ -43,5 +43,12 @@ command: `tail -f logs/blockbook.INFO`
 
 - Blockbook status can also be monitored by going to `https://localhost:9130`
 
+## Troubleshooting
+- If the docker container exits with the error: `Illegal instruction     (core dumped)`,
+it means the Debian files need to be updated for your computer. Regenerate them
+with [this fork of Blockbook](https://github.com/christroutner/blockbook) and
+copy the generated `.deb` files into the [debs](./debs) folder and rebuild the
+container.
+
 ## License
 [MIT](LICENSE.md)
