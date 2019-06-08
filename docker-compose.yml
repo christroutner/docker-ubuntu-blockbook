@@ -1,7 +1,7 @@
 bitcore-node:
   build: .
   dockerfile: Dockerfile
-  container_name: blockbook
+  container_name: blockbook-testnet
   ports:
     - "9030:9030"
     - "9130:9130"
