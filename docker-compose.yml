@@ -1,4 +1,4 @@
-bitcore-node:
+blockbook-node:
   build: .
   dockerfile: Dockerfile
   container_name: blockbook
