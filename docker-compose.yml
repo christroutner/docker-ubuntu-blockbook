@@ -1,11 +1,11 @@
-bitcore-node:
+blockbook-node:
   build: .
   dockerfile: Dockerfile
   container_name: blockbook
   ports:
-    - "9030:9030"
-    - "9130:9130"
+    - "9031:9030"
+    - "9131:9130"
   volumes:
-    - ./data:/opt/coins/data/bcash/blockbook/db
-    - ./logs:/opt/coins/blockbook/bcash/logs
+    - ../data:/opt/coins/data/bcash/blockbook/db
+    - ../logs:/opt/coins/blockbook/bcash/logs
   restart: always
