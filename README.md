@@ -21,10 +21,12 @@ you've met that prerequisite, edit the [blockchain_cfg.json](blockchain_cfg.json
 file with the RPC connection details.
 
 - Ensure you have Docker and Docker Compose installed.
-[Here](http://troutsblog.com/research/dev-ops/overview) to install that software
-on Ubuntu.
+[Here is information](http://troutsblog.com/research/dev-ops/overview) on how
+to install that software on Ubuntu.
 
-- Clone this repository and enter the directory it creates.
+- Clone this repository and enter the directory it creates:
+
+`git clone https://github.com/christroutner/docker-ubuntu-blockbook && cd docker-ubuntu-blockbook`
 
 - Build the image by running `docker-compose build`.
 
@@ -34,7 +36,7 @@ on Ubuntu.
 This container configures Blockbook to run as a single-threaded process. This is
 the only way to ensure that Blockbook does not corrupt its own database, which it
 has a tendency to do when running in multithreaded mode. This will make the initial
-sync pretty slow. When fully synced, Blockbook will consume about *130 GB* of data.
+sync pretty slow. When fully synced, Blockbook will consume over *130 GB* of data.
 
 - Data is saved in the [data](data) directory.
 
@@ -42,6 +44,9 @@ sync pretty slow. When fully synced, Blockbook will consume about *130 GB* of da
 command: `tail -f logs/blockbook.INFO`
 
 - Blockbook status can also be monitored by going to `https://localhost:9130`
+
+- A list of gotchas and other information about running
+Blockbook [can be found here](https://troutsblog.com/research/bitcoin-cash/blockbook)
 
 ## Troubleshooting
 - If the docker container exits with the error: `Illegal instruction     (core dumped)`,
