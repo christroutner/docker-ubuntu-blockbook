@@ -13,8 +13,8 @@ RUN sudo apt-get install -y nodejs build-essential
 COPY dummyapp.js dummyapp.js
 
 # Copy the pre-built .deb files
-COPY debs/backend-bcash_0.19.6-satoshilabs-1_amd64.deb backend-bcash.deb
-COPY debs/blockbook-bcash_0.3.0_amd64.deb blockbook-bcash.deb
+COPY debs/backend-bcash*.deb backend-bcash.deb
+COPY debs/blockbook-bcash*.deb blockbook-bcash.deb
 
 # Install the debs
 RUN apt install -y ./backend-bcash.deb

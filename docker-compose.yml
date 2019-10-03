@@ -1,12 +1,12 @@
 blockbook-node:
-  #build: .
-  #dockerfile: Dockerfile
-  image: christroutner/docker-ubuntu-blockbook:1.0.0
+  build: .
+  dockerfile: Dockerfile
+  #image: christroutner/docker-ubuntu-blockbook:1.0.0
   container_name: blockbook
   ports:
     - "9031:9030"
     - "9131:9130"
   volumes:
-    - ../data:/opt/coins/data/bcash/blockbook/db
+    - /mnt/data/bitcoin.com/blockchain-data/blockbook-mainnet/data:/opt/coins/data/bcash/blockbook/db
     - ../logs:/opt/coins/blockbook/bcash/logs
   restart: always
