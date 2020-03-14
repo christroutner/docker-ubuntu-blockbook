@@ -1,7 +1,7 @@
 blockbook-node:
-  build: .
-  dockerfile: Dockerfile
-  #image: christroutner/docker-ubuntu-blockbook:1.0.0
+  #build: .
+  #dockerfile: Dockerfile
+  image: christroutner/blockbook-0.3.2-bch-mainnet
   container_name: blockbook
   ports:
     - "9031:9030"
