@@ -1,4 +1,4 @@
-bitcore-node:
+blockbook-testnet:
   build: .
   dockerfile: Dockerfile
   container_name: blockbook-testnet
@@ -6,6 +6,7 @@ bitcore-node:
     - "19031:9030"
     - "19131:9130"
   volumes:
-    - ../data:/opt/coins/data/bcash/blockbook/db
+    #- ../data:/opt/coins/data/bcash/blockbook/db
+    - /mnt/data/bitcoin.com/blockchain-data/blockbook-testnet/data:/opt/coins/data/bcash/blockbook/db
     - ../logs:/opt/coins/blockbook/bcash/logs
   restart: always
