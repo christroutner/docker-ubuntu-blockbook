@@ -1,7 +1,7 @@
 blockbook-testnet:
-  #build: .
-  #dockerfile: Dockerfile
-  image: christroutner/blockbook-0.3.2-bch-testnet
+  build: .
+  dockerfile: Dockerfile
+  #image: christroutner/blockbook-0.3.2-bch-testnet
   container_name: blockbook-testnet
   ports:
     - "19031:9030"
